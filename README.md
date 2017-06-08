@@ -60,6 +60,8 @@
 
 - 后台请求转发API有限制，由于部署的是免费开发版，超过最大限制后会强制停止服务器，如果遇到提示超过限制，请谅解，我会重新部署。
 
+--- 
+
 ### Byemess-单页在线Todo应用
 
 !()[http://om8hmotom.bkt.clouddn.com/2017-06-08-byemessIntro.jpg]
@@ -81,6 +83,7 @@
   - [我的Redux入门小书](https://kylewh.github.io/2017/04/21/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E6%9C%ACredux%E5%B0%8F%E4%B9%A6/)
   - [总结Redux思维导图](https://kylewh.github.io/2017/04/21/Redux%E5%B0%8F%E4%B9%A6%E7%B3%BB%E5%88%97-Redux%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/)
 
+---
 
 ### 组件化商业首页
 
@@ -94,6 +97,8 @@
 - 主要组件包括：轮播、Tab跟踪、AJAX封装、JSONP封装、无限加载、懒加载、回到顶部。对于新闻无限加载部分使用过自己封装的瀑布流插件，由于会产生白边，放弃使用。由于涉及较多dom操作，选择使用jQuery提高开发效率。
 - 整体页面使用webpack打包，也使用了requireJS作为对比，理解CMD&AMD差异。
 - **查看更多封装组件和demo：** [我是链接](https://github.com/kylewh/IntoFrontEnd/tree/master/demo%26%E5%B0%81%E8%A3%85)
+
+---
 
 ### Node音乐推荐应用
 
