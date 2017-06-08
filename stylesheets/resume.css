@@ -133,25 +133,6 @@ header img {
   width: 175px;
 }
 
-@media screen and (max-width: 768px) {
-  .content {
-    padding-left: 0;
-    padding-top: 50px;
-  }
-  .description .des-chunk {
-    margin: 0 20px;
-    text-align: left;
-    padding: 0 1rem;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .container .description {
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-
 .cbp_tmtimeline {
   padding: 0;
   list-style: none;
@@ -456,4 +437,29 @@ header img {
 
 .tag-panel .tag.familiar {
   opacity: 0.5;
+}
+
+@media screen and (max-width: 414px) {
+  .cbp_tmtimeline > li .cbp_tmlabel {
+    box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    padding-left: 0;
+    padding-top: 50px;
+  }
+  .description .des-chunk {
+    margin: 0 20px;
+    text-align: left;
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container .description {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
