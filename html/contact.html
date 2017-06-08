@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="icon" href="log/icon.png">
+	<link rel="stylesheet" href="stylesheets/index.css">
+	<link rel="stylesheet" href="stylesheets/contact.css">
+	<link rel="stylesheet" href="https://at.alicdn.com/t/font_1468920013_492283.css">
+	<title>廖文浩kyle</title>
+</head>
+
+<body>
+	<div class="page-wrapper clear-fix">
+		<aside>
+			<a href="#" class="myname">Kyle's Resume</a>
+			<div class="menu">
+				<div class="menubox">
+					<div class="menuinner"></div>
+				</div>
+			</div>
+			<footer>
+				<ul class="nav">
+					<li><a href="./index.html" class="selected nav-item">个人 &nbsp&nbsp<small class="eng-small">About Me</small></a></li>
+					<li><a href="./portfolio.html" class="nav-item">项目 &nbsp&nbsp<small class="eng-small">Portfolio</small></a></li>
+					<li><a href="./skill.html" class="nav-item">技能  &nbsp&nbsp<small class="eng-small">Technology Stack</small></a></li>
+					<li><a href="./contact.html" class="nav-item">联系  &nbsp&nbsp<small class="eng-small">Contact</small></a></li>
+				</ul>
+				<div id="footer">
+					<div class="logo">
+						<a href="mailto:369058464@qq.com?subject=Job" target="_blank" class="r-mail r-icon"></a>
+						<a href="https://kylewh.github.io/" target="_blank" class="r-shu r-icon"></a>
+						<a href="https://github.com/kylewh" target="_blank" class="r-github r-icon"></a>
+						<a href="" target="_blank" class="r-weibo r-icon"></a>
+					</div>
+					<p class="source">
+						Open source:<a href="https://github.com/Zegendary/Garbage" target="_blank">GitHub</a>
+						<br>
+						<span class="right">© copyright Zegendary,2016</span>
+					</p>
+				</div>
+			</footer>
+		</aside>
+	</div>
+	<script>
+		const menu = document.getElementsByClassName('menu')[0]
+		const aside = document.getElementsByTagName('aside')[0]
+		menu.addEventListener('click', () => {
+			aside.classList.toggle('active')
+		})
+	</script>
+</body>
+
+</html>

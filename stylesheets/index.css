@@ -1,0 +1,339 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: bottom;
+  background: transparent;
+  -webkit-font-smoothing: antialiased;
+}
+
+.clear-fix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+a {
+  transition: all 150ms ease-in;
+  text-decoration: none;
+}
+
+body, html {
+  background-color: #FAFAFA;
+  font-family: -apple-system,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
+    Arial,
+    "PingFang SC",
+    "Hiragino Sans GB",
+    STHeiti,
+    "Microsoft YaHei",
+    "Microsoft JhengHei",
+    "Source Han Sans SC",
+    "Noto Sans CJK SC",
+    "Source Han Sans CN",
+    "Noto Sans SC",
+    "Source Han Sans TC",
+    "Noto Sans CJK TC",
+    "WenQuanYi Micro Hei",
+    SimSun,
+    sans-serif;
+}
+
+.page-wrapper {
+  height: 100%;
+}
+
+aside {
+  position: fixed;
+  z-index: 100;
+  background: #202021;
+  background: linear-gradient(135deg, #607D8B 0, #212121 100%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 250px;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  aside {
+    bottom: auto;
+    right: 0;
+    width: 100%;
+    height: 50px;
+  }
+}
+
+.page-wrapper aside .myname {
+  display: block;
+  margin: 35px 5px;
+  color: #FAFAFA;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 200;
+}
+
+aside .nav li {
+  display: block;
+  font-size: 18px;
+  background-image: linear-gradient(
+    to right,
+    transparent 50%,
+    rgba(233, 30, 99, 0.69) 50%
+  );
+  background-size: 200%;
+  transition: all 0.6s;
+}
+
+aside .nav li:hover {
+  background-position: -100%;
+}
+
+aside .nav li a {
+  font-size: inherit;
+  display: block;
+  color: #fff;
+  font-weight: 400;
+  margin: 10px 0 10px 30px;
+  padding: 10px;
+}
+
+aside .nav li a.selected {
+  color: #f9c427;
+}
+
+aside .nav li a:hover {
+  color: #4dd0e1;
+}
+
+aside .nav li a .eng-small {
+  font-size: 12px;
+  font-weight: 300;
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 768px) {
+  .nav li:before {
+    float: left;
+    color: #999;
+    font-size: 14px;
+    margin: 2px 5px 0 0;
+  }
+}
+
+#footer {
+  position: absolute;
+  padding-left: 30px;
+  margin-left: 10px;
+  bottom: 0;
+}
+
+footer .logo {
+  margin-bottom: 20px;
+}
+
+footer .logo a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: #414141;
+  color: #d9d9d9;
+  font-size: 24px;
+  text-align: center;
+  line-height: 40px;
+}
+
+footer .logo .r-mail {
+  background-color: rgb(0, 171, 108);
+  color: #fff;
+  opacity: 0.5;
+}
+
+footer .logo .r-shu {
+  background-color: rgb(88, 70, 19);
+  color: #fff;
+  opacity: 0.5;
+}
+
+footer .logo .r-github {
+  background-color: #fff;
+  color: #000;
+  opacity: 0.5;
+}
+
+footer .logo .r-weibo {
+  background-color: rgb(150, 14, 14);
+  color: #fff;
+  opacity: 0.5;
+}
+
+footer .logo a:hover {
+  animation: 0.8s ease-in rubberBand;
+  opacity: 1;
+}
+
+footer .source {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+footer .source span.right {
+  font-size: 14px;
+  color: #999;
+}
+
+footer .source a {
+  font-size: 14px;
+  color: #999;
+  margin: 0;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .page-wrapper aside .myname {
+    display: inline-block;
+    font-size: 24px;
+    line-height: 50px;
+    padding: 0;
+    margin: 0 0 0 20px;
+  }
+  aside .menu {
+    float: right;
+    position: relative;
+    z-index: 1;
+    padding: 13px 30px;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+    transition-property: opacity, -webkit-filter;
+    transition-property: opacity, filter;
+    transition-property: opacity, filter, -webkit-filter;
+    transition-duration: .15s;
+    transition-timing-function: linear;
+  }
+
+  .menu .menubox {
+    width: 30px;
+    height: 24px;
+    position: relative;
+  }
+
+  .menubox .menuinner {
+    transition-duration: .3s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    top: 50%;
+    margin-top: -2px;
+  }
+
+  .menuinner, .menuinner::before, .menuinner::after {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 3px;
+    position: absolute;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    transition-duration: .15s;
+    transition-timing-function: ease;
+  }
+
+  .menuinner::before {
+    top: -8px;
+    transition: top .1s .34s ease-in, opacity .1s ease-in;
+  }
+
+  .menuinner::after {
+    transition: bottom .1s .34s ease-in,
+      -webkit-transform .3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: bottom .1s .34s ease-in,
+      transform .3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: bottom .1s .34s ease-in,
+      transform .3s cubic-bezier(0.55, 0.055, 0.675, 0.19),
+      -webkit-transform .3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    bottom: -8px;
+  }
+
+  .menuinner::before, .menuinner::after {
+    content: "";
+    display: block;
+  }
+
+  .active .menubox .menuinner {
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg);
+    transition-delay: .14s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  .active .menuinner::before {
+    top: 0;
+    opacity: 0;
+    transition: top .1s ease-out, opacity .1s .14s ease-out;
+  }
+
+  .active .menuinner::after {
+    bottom: 0;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    transition: bottom .1s ease-out,
+      -webkit-transform .3s .14s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: bottom .1s ease-out,
+      transform .3s .14s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: bottom .1s ease-out,
+      transform .3s .14s cubic-bezier(0.215, 0.61, 0.355, 1),
+      -webkit-transform .3s .14s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  footer {
+    position: fixed;
+    top: 50px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 150ms ease-in;
+  }
+
+  .active footer {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, .95, 1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
