@@ -460,6 +460,5 @@ header img {
 @media screen and (max-width: 1024px) {
   .container .description {
     flex-direction: column;
-    justify-content: center;
   }
 }
