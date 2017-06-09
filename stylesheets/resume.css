@@ -469,4 +469,7 @@ header img {
     -ms-flex-direction: column;
     flex-direction: column;
   }
+  .description .des-chunk {
+    flex-basis: auto;
+  }
 }
