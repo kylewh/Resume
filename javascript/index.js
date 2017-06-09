@@ -12,7 +12,7 @@
   })
 
   footer.addEventListener('click', () => {
-    aside.classList.toggle('active')
+    aside.classList.contains('active') && aside.classList.toggle('active')
   })
 
   nav.addEventListener('click', e => {
