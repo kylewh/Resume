@@ -1,5 +1,6 @@
 (function () {
   const menu = document.getElementsByClassName('menu')[0]
+  const footer = document.getElementsByTagName('footer')[0]
   const aside = document.getElementsByTagName('aside')[0]
   const nav = document.getElementsByClassName('nav')[0]
   const oA = document.getElementsByClassName('nav-item')
@@ -7,6 +8,10 @@
   const contentSize = oContent.length
 
   menu.addEventListener('click', () => {
+    aside.classList.toggle('active')
+  })
+
+  footer.addEventListener('click', () => {
     aside.classList.toggle('active')
   })
 
