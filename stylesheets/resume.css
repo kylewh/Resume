@@ -8,8 +8,6 @@ body {
 }
 
 *, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -49,12 +47,16 @@ body {
 }
 
 .container .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 
 .description .des-chunk {
   margin: 0 50px;
+  -ms-flex-preferred-size: calc(100% - 200px);
   flex-basis: calc(100% - 200px);
   text-align: left;
   padding: 0 1rem;
@@ -73,6 +75,7 @@ header {
     #232526,
     #414345
   ); /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(right, #232526, #414345);
   background: linear-gradient(
     to left,
     #232526,
@@ -170,6 +173,7 @@ header img {
   margin: 0 0 30px 0;
   font-weight: 400;
   font-size: 95%;
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 30px,
     rgba(0, 0, 0, 0.23) 0px 6px 10px;
@@ -327,6 +331,7 @@ header img {
   line-height: 40px;
   margin-right: 8px;
   color: #a5a7aa;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   cursor: pointer;
 }
@@ -459,6 +464,9 @@ header img {
 
 @media screen and (max-width: 1024px) {
   .container .description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 }
