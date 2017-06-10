@@ -140,7 +140,7 @@ aside .nav li a .eng-small {
 }
 
 footer .logo {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 footer .logo a {
@@ -186,21 +186,19 @@ footer .logo a:hover {
 }
 
 footer .source {
-  font-size: 14px;
+  font-size: 10px;
   color: #999;
   margin-bottom: 10px;
 }
 
 footer .source span.right {
-  font-size: 14px;
   color: #999;
 }
 
 footer .source a {
-  font-size: 14px;
+  font-size: 12px;
   color: #999;
-  margin: 0;
-  text-decoration: underline;
+  margin-left: 10px;
 }
 
 @media screen and (max-width: 768px) {

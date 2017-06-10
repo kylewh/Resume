@@ -43,6 +43,49 @@ body {
   align-items: center;
 }
 
+#contact .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#contact .container .title {
+  margin-bottom: 45px;
+}
+.main .contact-card {
+  display: flex;
+  margin: 30px 0;
+  font-size: 40px;
+  align-items: center;
+}
+
+.contact-card .icon {
+  display: flex;
+  width: 60px;
+
+  align-items: center;
+}
+
+.contact-card i {
+  font-size: 40px;
+}
+
+.contact-card span {
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.contact-card.wechat img {
+  width: 200px;
+}
+
+.contact-card span:hover{
+  color: #E91E63;
+}
+
 .main .intro li {
   text-align: left !important;
 }
@@ -469,9 +512,17 @@ header p, .main .intro li {
   opacity: 0.5;
 }
 
+
+
 @media screen and (max-width: 414px) {
   .cbp_tmtimeline > li .cbp_tmlabel {
     box-shadow: none;
+  }
+  .contact-card .icon {
+    font-size: 30px;
+  }
+  .contact-card span {
+    font-size: 20px;
   }
 }
 
