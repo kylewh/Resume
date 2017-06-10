@@ -4,11 +4,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
-	<link rel="icon" href="../log/icon.png">
+	<link rel="icon" href="../logo/icon.png">
 	<link rel="stylesheet" href="../stylesheets/index.css">
-	<link rel="stylesheet" href="../stylesheets/contact.css">
-	<link rel="stylesheet" href="../stylesheets/font.css">
-	<title>廖文浩kyle</title>
+	<link rel="stylesheet" href="../stylesheets/resume.css">
+	<link rel="stylesheet" href="https://at.alicdn.com/t/font_1468920013_492283.css">
+	<script src="https://use.fontawesome.com/0efc87e065.js"></script>
+	<title>廖文浩Kyle</title>
 </head>
 
 <body>
@@ -22,17 +23,17 @@
 			</div>
 			<footer>
 				<ul class="nav">
-					<li><a href="./index.html" class="selected nav-item">个人 &nbsp&nbsp<small class="eng-small">About Me</small></a></li>
-					<li><a href="./portfolio.html" class="nav-item">项目 &nbsp&nbsp<small class="eng-small">Portfolio</small></a></li>
-					<li><a href="./skill.html" class="nav-item">技能  &nbsp&nbsp<small class="eng-small">Technology Stack</small></a></li>
-					<li><a href="./contact.html" class="nav-item">联系  &nbsp&nbsp<small class="eng-small">Contact</small></a></li>
+					<li><a href="#" class="selected nav-item">个人 &nbsp&nbsp<small class="eng-small">About Me</small></a></li>
+					<li><a href="#" class="nav-item">项目 &nbsp&nbsp<small class="eng-small">Portfolio</small></a></li>
+					<li><a href="#" class="nav-item">技能  &nbsp&nbsp<small class="eng-small">Technology Stack</small></a></li>
+					<li><a href="#" class="nav-item">联系  &nbsp&nbsp<small class="eng-small">Contact</small></a></li>
 				</ul>
 				<div id="footer">
 					<div class="logo">
 						<a href="mailto:369058464@qq.com?subject=Job" target="_blank" class="r-mail r-icon"></a>
 						<a href="https://kylewh.github.io/" target="_blank" class="r-shu r-icon"></a>
 						<a href="https://github.com/kylewh" target="_blank" class="r-github r-icon"></a>
-						<a href="" target="_blank" class="r-weibo r-icon"></a>
+						<a href="#" target="_blank" class="r-weibo r-icon"></a>
 					</div>
 					<p class="source">
 						Open source:<a href="https://github.com/kylewh/Resume" target="_blank">GitHub</a>
@@ -42,14 +43,34 @@
 				</div>
 			</footer>
 		</aside>
+
+		<!-- 4. Contact Begin -->
+		<div id="contact" class="content visible">
+			<div class="main">
+				<ul class="wrapper">
+					<li class="contact-card">
+						<div class="icon"><i class="fa fa-google"aria-hidden="true"></i></div>
+						<span>kylevanho@gmail.com</span>
+					</li>
+					<li class="contact-card qqmail">
+						<div class="icon"><i class="fa fa-qq" aria-hidden="true"></i></div>
+						<span>369058464@qq.com</span>
+					</li>
+					<li class="contact-card mobile">
+						<div class="icon"><i class="fa fa-phone-square" aria-hidden="true"></i></div>
+						<span>13827460426</span>
+					</li>
+					<li class="contact-card wechat">
+						<div class="icon"><i class="fa fa-weixin" aria-hidden="true"></i></div>
+						<span>hspectacular</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 4. Contact End -->
+
 	</div>
-	<script>
-		const menu = document.getElementsByClassName('menu')[0]
-		const aside = document.getElementsByTagName('aside')[0]
-		menu.addEventListener('click', () => {
-			aside.classList.toggle('active')
-		})
-	</script>
+	<script src='../javascript/index.js'></script>
 </body>
 
 </html>
