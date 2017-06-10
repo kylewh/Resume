@@ -101,6 +101,9 @@ body {
   padding-top: 50px;
 }
 
+#resume-portfolio .title {
+  padding-top: 80px;
+}
 .description {
   display: -webkit-box;
   display: -ms-flexbox;
