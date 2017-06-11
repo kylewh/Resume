@@ -51,7 +51,6 @@ body {
 
 .contact-card span {
   transition: all 0.3s ease-in;
-  cursor: pointer;
   font-size: 30px;
   font-weight: 300;
 }
@@ -60,7 +59,7 @@ body {
   width: 200px;
 }
 
-.contact-card span:hover{
+.contact-card span:hover {
   color: #E91E63;
 }
 
@@ -490,7 +489,7 @@ header img {
     box-shadow: none;
   }
   #contact .main {
-    height: calc( 100vh - 50px);
+    height: calc(100vh - 50px);
   }
   .contact-card .icon {
     font-size: 30px;
